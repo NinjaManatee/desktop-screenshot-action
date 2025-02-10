@@ -3,9 +3,15 @@ name: Screenshot
 on: [push]
 
 jobs:
-    screenshot:
-        runs-on: windows-latest
-        steps:
-            - uses: actions/checkout@v2
-            - uses: ./
-              id: hello
+  screenshot:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Take screenshot
+        uses: ./
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshot
+          path: ./screenshot.jpg
