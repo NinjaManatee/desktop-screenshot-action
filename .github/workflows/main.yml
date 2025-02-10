@@ -13,7 +13,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: screenshot
+          name: screenshot1
           path: ./screenshot.jpg
       - name: Take screenshot specifying file name
         uses: ./
@@ -22,5 +22,5 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: screenshot
+          name: screenshot2
           path: ./test.jpg
