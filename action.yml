@@ -5,5 +5,5 @@ inputs:
         description: "Name of screenshot file"
         default: "screenshot.jpg"
 runs:
-    using: "node22"
+    using: "node20"
     main: "index.js"
