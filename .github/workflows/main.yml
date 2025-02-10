@@ -15,3 +15,12 @@ jobs:
         with:
           name: screenshot
           path: ./screenshot.jpg
+      - name: Take screenshot
+        uses: ./
+        with:
+          file-name: ./tmp/test.jpg
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshot
+          path: ./tmp/test.jpg
