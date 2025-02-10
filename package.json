@@ -1,7 +1,7 @@
 {
   "name": "desktop-screenshot-action",
   "version": "1.0.0",
-  "description": "",
+  "description": "Action to take a screenshot of the desktop",
   "main": "index.js",
   "author": "NinjaManatee",
   "license": "MIT",
