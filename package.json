@@ -1,12 +1,20 @@
 {
   "name": "desktop-screenshot-action",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Action to take a screenshot of the desktop",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "NinjaManatee",
   "license": "MIT",
+  "scripts": {
+    "build": "ncc build ./src/index.js --license licenses.txt",
+    "postinstall": "npm run build"
+  },
   "dependencies": {
+    "@actions/artifact": "^2.2.1",
     "@actions/core": "^1.11.1",
     "screenshot-desktop": "^1.15.1"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3"
   }
 }
