@@ -6,4 +6,4 @@ inputs:
         default: "screenshot.jpg"
 runs:
     using: "node20"
-    main: "index.js"
+    main: "dist/index.js"
