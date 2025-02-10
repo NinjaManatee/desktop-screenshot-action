@@ -15,7 +15,7 @@ The name of the screenshot jpg to upload. Default `"screenshot.jpg"`.
 ## Example usage
 
 ```
-- uses: NinjaManatee/desktop-screenshot-action@0.1
+- uses: NinjaManatee/desktop-screenshot-action@1.0
   with:
     file-name: 'desktop.jpg'
 ```
