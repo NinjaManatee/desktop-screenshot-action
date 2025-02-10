@@ -1,5 +1,5 @@
 import screenshot from "screenshot-desktop";
-import core from "@actions/core";
+import * as core from "@actions/core";
 import { DefaultArtifactClient } from '@actions/artifact'
 
 const fileName = core.getInput("file-name");
